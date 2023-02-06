@@ -29,7 +29,7 @@ a {
   justify-items: center;
   padding: 50px 40px;
 }
-footer {
+/* footer {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -39,16 +39,17 @@ footer {
   background-color: rgb(78, 2, 99);
 }
 .socials {
-  /* display:flex; */
+
 }
 .btn-social {
-  /* display:block; */
   width: 40px;
   height: 40px;
   image: url(../img/ln_logo.png);
-}
+} */
 
-/* Main page */
+
+
+/*//// Main page ////*/
 
 .index-page {
   display: flex;
@@ -184,8 +185,9 @@ footer {
 .about-item {
   display: flex;
   flex-direction: column;
+  text-align: center;
   width: 70%;
-  padding: 10px;
+  padding: 20px;
   border: 1px solid;
   border-color: transparent black transparent black;
 }
@@ -256,7 +258,8 @@ ul {
   }
 }
 
-/* Portfolio page */
+
+/*//// Portfolio page ////*/
 
 .text-box {
   display: flex;
@@ -330,7 +333,10 @@ ul {
   justify-content: center;
 }
 
-/* Contact page */
+
+
+/*//// Contact page ////*/
+
 .contact-banner {
   display: flex;
   width: 100%;
@@ -432,7 +438,6 @@ textarea {
 
 /* SCREEN RESPONSIVENESS */
 
-
 @media (max-width: 1000px) {
   .text-box {
     display: flex;
@@ -453,6 +458,7 @@ textarea {
     height: 600px;
   }
 }
+
 @media (max-width: 800px) {
   .portfolio-items {
     width: 40%;
@@ -462,7 +468,7 @@ textarea {
     display: flex;
     align-items: center;
     transform: rotate(90deg);
-    bottom: 10px;
+    bottom: 30px;
     right: calc(50% - 50px);
     /* bottom:calc(50% - 40px);  */
     width: 100px;
@@ -470,6 +476,9 @@ textarea {
   }
   .skills {
     margin: 0 0 200px 0;
+  }
+  .about-box {
+    height: 140vh;
   }
 }
 
@@ -480,6 +489,9 @@ textarea {
     opacity: 80%;
     text-shadow: 0 0 30px rgb(155, 127, 163);
     margin: 0;
+  }
+  .font-h2 {
+    font-size: 3em;
   }
   .grid-container {
     grid-template-areas:
@@ -493,6 +505,6 @@ textarea {
   }
   .about-box {
     margin: 50px 0 0 0;
+    height: 150vh;
   }
 }
-
